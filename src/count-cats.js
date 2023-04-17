@@ -17,16 +17,13 @@ const { NotImplementedError } = require('../extensions/index.js');
 function countCats(backyard) {
   let cats = 0;
   for (let i = 0; i < backyard.length; i++) {
-    // loop through the columns of each row
     for (let j = 0; j < backyard[i].length; j++) {
-      // check if the current element is a cat ear
       if (backyard[i][j] === "^^") {
-        // increment the number of cats by one
         cats++;
       }
     }
   }
-  // return the number of cats
+
   return cats;
 }
 
